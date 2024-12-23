@@ -8,7 +8,7 @@ This project is a web application that provides various services and features, i
    ```
 2. Navigate to the project directory:
    ```bash
-   cd d:/BackEnd Development/core
+   cd core
    ```
 3. Install the required packages:
    ```bash
