@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(135deg, #35424a, #4a6e8c);
+            color: #ffffff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+            animation: fadeInDown 1s;
+        }
+        main {
+            margin: 40px 20px;
+        }
+        .employee-card {
+            margin-bottom: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .employee-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #35424a;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body> 
+    {% include "navbar.html" %}
+    <header>
+        <h1 class="animate__animated animate__fadeInDown">Employee Management System</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="employee-card animate__animated animate__fadeInUp">
+                        <h2>Family Law</h2>
+                        <p>We provide compassionate legal support for family-related issues, including divorce and custody matters.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="employee-card animate__animated animate__fadeInUp">
+                        <h2>Criminal Defense</h2>
+                        <p>Our experienced attorneys are dedicated to defending your rights and ensuring a fair trial.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="employee-card animate__animated animate__fadeInUp">
+                        <h2>Personal Injury</h2>
+                        <p>We help clients seek justice and compensation for injuries caused by negligence.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="employee-card animate__animated animate__fadeInUp">
+                        <h2>Business Law</h2>
+                        <p>Our firm offers legal guidance for businesses, including contracts and compliance issues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Employee Management System. All rights reserved.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Management System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+ {% include "navbar.html" %}
+    <!-- Hero Section -->
+    <header class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeInDown">Find Your Dream Job</h1>
+            <p class="lead animate__animated animate__fadeInUp">Connecting talent with opportunity</p>
+            <a href="/emp/add_emp" class="btn btn-light btn-lg animate__animated animate__bounce">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Job Listings Section -->
+    <section class="jobs py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeIn">Job Listings</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Engineer</h5>
+                            <p class="card-text">Location: New York, NY</p>
+                            <a href="/emp/add_emp" class="btn btn-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <h5 class="card-title">Product Manager</h5>
+                            <p class="card-text">Location: San Francisco, CA</p>
+                            <a href="/emp/add_emp" class="btn btn-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <h5 class="card-title">UX Designer</h5>
+                            <p class="card-text">Location: Austin, TX</p>
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeIn">What Our Users Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__fadeInLeft">
+                        <div class="card-body">
+                            <p class="card-text">"This platform helped me find my dream job in no time!"</p>
+                            <h5 class="card-title">John Doe</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <p class="card-text">"I love the user-friendly interface and the variety of job listings."</p>
+                            <h5 class="card-title">Jane Smith</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated animate__fadeInRight">
+                        <div class="card-body">
+                            <p class="card-text">"A great resource for job seekers!"</p>
+                            <h5 class="card-title">Emily Johnson</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2023 JobPortal. All
