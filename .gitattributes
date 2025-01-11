@@ -1,0 +1,38 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Explicitly declare text files
+*.py text
+*.js text
+*.css text
+*.md text
+*.txt text
+
+# Ignore HTML files in language statistics
+*.html linguist-generated=true
+
+# Exclude vendor libraries
+vendor/* linguist-vendored
+
+# Exclude Django admin templates
+django/contrib/admin/templates/* linguist-vendored
+
+# Force Python and JavaScript as the primary languages
+*.py linguist-language=Python
+*.js linguist-language=JavaScript
+
+# Binary files
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.sqlite3 binary
+
+# Merge settings for specific file types
+*.py merge=union
+*.js merge=union
